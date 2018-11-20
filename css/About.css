@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+ background-color: grey;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.site-header {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  top:0;
+  box-shadow: 3px 3px 5px 0 rgba(0,0,0,.1);
+  height:120px;
+}
+
+
+/* Dropdown Menu
+----------------------------*/
+
+.dropdown {
+ /* margin-top: 1.4em;*/
+  text-align: center;
+  font-weight:0;
+  display: block;
+  vertical-align: top;
+  top: 50px;
+  text-overflow: ellipsis;
+  position: relative;
+top: 40%;
+transform: translateY(-400%); 
+
+
+
+}
+
+.dropdown > li {
+  text-align : left;
+}
+
+.dropdown ul, .dropdown li { 
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+.dropdown ul {
+  background-color: #fff;
+  box-shadow: 3px 3px 15px 0 rgba(0,0,0,.1);
+  border-radius: 7px;
+  width: 180px;
+}
+
+.dropdown ul ul {
+  top: 0;
+  left: 100%;
+  right: auto;
+}
+
+.dropdown li{
+  position : relative;
+  display : block;
+}
+
+.dropdown > li {
+  display : inline-block;
+}
+
+.dropdown li:hover > ul {
+  display: block;
+}
+
+.dropdownJavaScript li:hover > ul{
+  display: none;
+}
+
+.dropdownJavaScript li.dropdownOpen > ul{
+  display : block;
+}
+
+.dropdown a {
+  display: block;
+  padding: 0.5em 1.25em;
+  color: #333;
+/*   background-color: #f8f8f8; */
+  transition : background 0.2s;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+
+.dropdown a:hover {
+  opacity:.2;
+}
+
+.dropdown ul {
+  padding: .5em .5em .25em .5em;
+  margin-left: -.5em;
+}
+
+.dropdown ul a {
+  margin-bottom:.25em;
+}
+.content{
+  width: 700px;
+  height: 300px;
+  background-color: grey;
+  margin-top: 150px;
+  top:50%;
+  text-align: center;
+  margin-left:270px;
+  color:white;
+  padding: 20px;
+  font-size: 15px;
+}
+footer{
+position:absolute;
+   bottom:0;
+   width:100%;
+   /*s*/   /* Height of the footer */
+   background:grey;
+   text-align: center;
+   padding-top: 10px;
+
+}
+.percent{
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+  float: left;
+
+}
+* {
+    box-sizing: border-box;
+}
+
+/*body {
+    font-family: Arial;
+    margin: 0 auto; 
+    max-width: 800px; 
+    padding: 20px;
+}*/
+
+.heading {
+    font-size: 25px;
+ /*   margin-right: 25px;*/
+}
+
+.fa {
+    /*font-size: 25px;*/
+}
+
+.checked {
+    color: orange;
+}
+
+/* Three column layout */
+.side {
+    float: left;
+    width: 15%;
+    margin-top:10px;
+}
+
+.middle {
+    margin-top:10px;
+    float: left;
+    width: 70%;
+}
+
+/* Place text to the right */
+.right {
+    text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The bar container */
+.bar-container {
+    width: 400px;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: black;
+    margin-left: 25px;
+}
+
+/* Individual bars */
+.bar-5 {width: 70%; height: 18px; background-color: #4CAF50;}
+.bar-4 {width: 50%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 35%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+    .side, .middle {
+        width: 100%;
+    }
+    .right {
+        display: none;
+    }
+    
+
+
